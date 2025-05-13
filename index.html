@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate JS Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎯 Ultimate Cedrick's JS Playground</h1>
+  <button id="toggleDarkMode">🌙 Toggle Dark Mode</button>
+  <button id="toggleRetroMode">🎨 Retro Mode</button>
+  <button id="toggleMusic">🎵 Toggle Background Music</button>
+
+  <section>
+    <h2>🎈 Event Handling</h2>
+    <button onclick="changeText(this)">Click Me!</button>
+    <div id="hoverBox">Hover over me!</div>
+    <input type="text" placeholder="Type something" id="keyInput" />
+    <button ondblclick="doubleClickSecret()">Double Click Me!</button>
+  </section>
+
+  <section>
+    <h2>🎮 Interactive Elements</h2>
+    <div id="gallery">
+      <img src="food.jpg" onclick="alert('Food Time clicked!')" alt="Gallery Image 1" />
+      <img src="wildlife.jpg" onclick="alert('Its Wild wild out clicked!')" alt="Gallery Image 2" />
+      <img src="nature.jpg" onclick="alert('Natural nature clicked!')" alt="Gallery Image 3" />
+    </div>
+    <div>
+      <button onclick="showTab('tab1')">Tab 1</button>
+      <button onclick="showTab('tab2')">Tab 2</button>
+    </div>
+    <div id="tab1" class="tabContent active"><a href="https://academy.powerlearnprojectafrica.org/login">Open Me</a></div>
+    <div id="tab2" class="tabContent"><a href="https://museums.or.ke">Kenya Museums</a></div>
+  </section>
+
+  <section>
+    <h2>📋✅ Form Validation</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Name (required)" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+      <button type="submit">Submit</button>
+      <div id="formFeedback"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

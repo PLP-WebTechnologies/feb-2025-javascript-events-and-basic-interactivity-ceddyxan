@@ -1,0 +1,77 @@
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f0f0f0;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+h1 {
+  font-size: 2rem;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+#hoverBox {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: lightblue;
+  transition: background-color 0.3s;
+  width: 200px;
+}
+.tabContent {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.tabContent.active {
+  display: block;
+}
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+.retro-mode {
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(135deg, #ffcc00, #ff6699);
+  color: black;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
+#gallery img {
+  cursor: pointer;
+h1 {
+  text-align: center;
+  color: #1976d2;
+}
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeInSection 1s ease-in-out;
+}
